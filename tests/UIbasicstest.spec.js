@@ -29,12 +29,7 @@ test.only('Browser context Playwright test', async ({browser})=>
     //to grab all card titles on the page
     const allTitles = await cardTitles.allTextContents();
     console.log(allTitles);
-
-
-    
-
-
-   
+   //End of test
 });
 
 test('Page Playwright test', async ({page})=>
@@ -45,9 +40,5 @@ test('Page Playwright test', async ({page})=>
     //get title - assertion
     console.log(await page.title());
     await expect(page).toHaveTitle("Google");
-
-    
-
-
-
+//TODO:
 });
